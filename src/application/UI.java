@@ -40,13 +40,6 @@ public class UI {
             System.out.print("-");
         }
         else {
-            System.out.print(piece);
-        }
-        System.out.print(" ");
-        if (piece == null) {
-            System.out.print("-");
-        }
-        else {
             if (piece.getColor() == Color.WHITE) {
                 System.out.print(ANSI_WHITE + piece + ANSI_RESET);
             }
