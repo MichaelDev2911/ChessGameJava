@@ -26,12 +26,8 @@ public class Program {
                 ChessPosition target = UI.readChessPosition(keyboard);
                 ChessPiece capturedPiece = chessMatch.performChessMove(source, target);
             }
-            catch (ChessException e ){
+            catch (ChessException | InputMismatchException e ){
                 System.out.println(e.getMessage());
-                keyboard.nextLine();
-            }
-            catch (InputMismatchException exception){
-                System.out.println(exception.getMessage());
                 keyboard.nextLine();
             }
         }
